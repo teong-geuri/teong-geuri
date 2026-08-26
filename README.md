@@ -55,7 +55,7 @@
 </div>
 
 <div align="center">
-  <img alt="github-snake" src="https://raw.githubusercontent.com/teong-geuri/teong-geuri/main/github-contribution-grid-snake.gif" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/teong-geuri/teong-geuri/main/github-contribution-grid-snake-dark.gif" />
 </div>
 
 ## Contact
