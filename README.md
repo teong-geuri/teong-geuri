@@ -54,6 +54,10 @@
   <img width="100%" src="https://raw.githubusercontent.com/teong-geuri/teong-geuri/main/github-metrics.svg" alt="GitHub metrics" />
 </div>
 
+<div align="center">
+  <img alt="github-snake" src="https://raw.githubusercontent.com/teong-geuri/teong-geuri/main/github-contribution-grid-snake.gif" />
+</div>
+
 ## Contact
 
 <div align="center">
