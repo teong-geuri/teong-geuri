@@ -1,0 +1,35 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Generate snake animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.gif
+            dist/github-contribution-grid-snake-dark.gif?palette=github-dark
+
+      - name: Commit and push to main
+        run: |
+          cp dist/github-contribution-grid-snake.gif ./github-contribution-grid-snake.gif
+          cp dist/github-contribution-grid-snake-dark.gif ./github-contribution-grid-snake-dark.gif
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-contribution-grid-snake.gif github-contribution-grid-snake-dark.gif
+          git diff --cached --quiet || git commit -m "Update snake contribution grid [skip ci]"
+          git push
