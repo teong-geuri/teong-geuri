@@ -61,12 +61,9 @@
 ## Contact
 
 <div align="center">
-  <a href="mailto:janganene@gmail.com">Email</a>
+  <a href="mailto:teonggeuri@teonggeuri.kr">Email</a>
   ·
   <a href="https://github.com/janganene">GitHub</a>
-  ·
-  <a href="https://discordapp.com/users/1308350938385223680">Discord</a>
-</div>
 
 <br />
 
